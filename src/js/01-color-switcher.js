@@ -35,7 +35,7 @@ function onButtonStop() {
   clearInterval(timeInterval);
 }
 
-// функція видачі рандомного кольору
+// генератор рандомного кольору
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
