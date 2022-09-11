@@ -55,23 +55,6 @@ function startTimer() {
   }, 1000);
 }
 
-// const timer = {
-//   start() {
-//     refs.startBTN.disabled = true;
-
-//     const timerId = setInterval(() => {
-//       const currentTime = Date.now();
-//       deltaTime = selectTime - currentTime;
-//       const { days, hours, minutes, seconds } = convertMs(deltaTime);
-//       console.log(`${days}: ${hours}: ${minutes}: ${seconds} `);
-//       updateTrime({ days, hours, minutes, seconds });
-//     }, 1000);
-//     if (deltaTime < 0) {
-//       clearInterval(timerId);
-//     }
-//   },
-// };
-
 // записує дані в лічильник
 function updateTrime({ days, hours, minutes, seconds }) {
   refs.daysTimer.textContent = days;
