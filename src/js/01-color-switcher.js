@@ -13,8 +13,12 @@ let timeInterval = null;
 // деактивую кнопку старт
 // встановлюю інтервал, викликаю функцію заміни кольору
 function onButtonStart() {
+  makeSetInterval();
   refs.startBtn.disabled = true;
   refs.stopBtn.disabled = false;
+}
+
+function makeSetInterval() {
   timeInterval = setInterval(() => {
     changeCokor();
   }, 1000);
