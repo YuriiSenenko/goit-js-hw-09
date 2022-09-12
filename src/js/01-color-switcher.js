@@ -20,12 +20,12 @@ function onButtonStart() {
 
 function makeSetInterval() {
   timeInterval = setInterval(() => {
-    changeCokor();
+    changeColor();
   }, 1000);
 }
 
 // функція заміни кольору фона
-function changeCokor() {
+function changeColor() {
   const colorRandom = getRandomHexColor();
   refs.bodyEl.style.background = colorRandom;
 }
